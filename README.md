@@ -1,2 +1,11 @@
-# APIConnect-Policy-AssemblyLogger
-A basic User Defined Policy to allow users to log to the datapower log from inside an API Assembly.
+#Assembly Logger policy
+
+
+To build this policy Run
+```
+mkdir tmp
+mkdir out
+sh build.sh . writeToDatapowerLog
+```
+
+This will generate the zip file in the out directory.

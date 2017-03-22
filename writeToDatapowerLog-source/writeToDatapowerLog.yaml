@@ -1,0 +1,45 @@
+policy: 1.0.0
+
+info:
+  title: DP Logger
+  name: writeToDatapowerLog
+  version: 1.0.0
+  description: A policy to log a custom message at a specific level to the datapower logs.
+  contact:
+    name: Jack Dunleavy
+    url:
+    email: jack.dunleavy@live.co.uk
+
+attach:
+    - rest
+    - soap
+
+properties:
+    $schema: "http://json-schema.org/draft-04/schema#"
+    type: object
+    properties:
+        logLevel:
+            label: logLevel
+            description: The desired level of logging. Note that the default datapower log contains messages with > error severity.
+            enum:
+                - info
+                - notice
+                - warn
+                - error
+                - critical
+                - alert
+                - emerg
+                - log
+                - trace
+            type: string
+            default: error
+        message:
+            label: message
+            description: The message to be logged.
+            type: string
+    required:
+        - logLevel
+        - message
+
+gateways:
+    - datapower-gateway
