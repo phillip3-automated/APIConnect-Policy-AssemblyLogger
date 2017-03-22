@@ -14,8 +14,9 @@ START_DIR=$(pwd) # Store the initial directory
 OUTPUT_DIR=$2
 OUTPUT_DIRPATH=tmp/${OUTPUT_DIR}
 rm -rf $OUTPUT_DIRPATH
-echo "Creating directory: $OUTPUT_PATHDIR/implementation..." || fail_build "Output directory structure could not be created"
+echo "Creating directory: $OUTPUT_DIRPATH/implementation..." || fail_build "Output directory structure could not be created"
 mkdir -p $START_DIR/$OUTPUT_DIRPATH/implementation
+mkdir -p $START_DIR/out
 
 cp $START_DIR/$SOURCE_DIR/${OUTPUT_DIR}.yaml $START_DIR/$OUTPUT_DIRPATH/
 

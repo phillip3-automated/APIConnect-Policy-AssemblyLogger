@@ -3,8 +3,6 @@
 
 To build this policy Run
 ```
-mkdir tmp
-mkdir out
 sh build.sh . writeToDatapowerLog
 ```
 
