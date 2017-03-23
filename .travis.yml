@@ -16,7 +16,7 @@ deploy:
   provider: releases
   api_key:
     secure: Vr5hAYR+rVrbHYXwUKwzrLK+7EFD5lE/MpbRVXCrX9RQOL55LtH+PDXyqNoKPU5f9OPEZmX4QTw9Z7vKDNteNg5r5H78v7lI20z9QnS8Pr3JKfX5gMpPSATTHs3mBV9eJ0Sbs8Z+IxdJhgGjPNn9SFA+0WwwS6g2ccGTUxy/hhBRT/9mGiE0eMIN2Pzpq4TtOV5CYyHrvzq8X2+JYpMjp5cWxPDvHw3o+Sjp94emNQ18eAiehfWy0hRoln5Mwm4TA+Q8iE7C9thamFT2ECYAtlivqKCmlHdqJmXo70uWOggQMs0t3iQv7VYg6DlujaZsxhO5/uUg89/ZKUlwx7sFwbe3gywNESzyRninoY0tQsGVFhk+LDW/n+W7rB7nV6iGPN7nZ2Cw9Tzfr/QlzvRzcBOaK9We2mA2UxJcTJDqXYC3KDNcdVH/cEldv6OaAnaEapBBktGUFp4s9Hg6gmXHsucthFrZP5/gTIiivDB5DYStocEfhOqDjcjGOwR5Aa7OR7UNiDtDe1/PDZ67Mwn/rb85QcahRvInVBTd6taf9h4Y4X10laEWfKIc/YpauJkf0/1qjg6lBD1QKNVXiFASrx/I2Wtw/+snC4U+UHn7WlpRZvf5vqRrOCqogQwJDFwqrH1FjhG28EeZ3JBCsiOFXjXGTVKGAfIRBKcFwkxm2uw=
-  file: out/*
+  file: *
   skip_cleanup: true
   on:
     repo: ChrisPhillips-cminion/APIConnect-Policy-AssemblyLogger
