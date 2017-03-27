@@ -1,4 +1,4 @@
-# Assembly Logger policy
+# Assembly Logger policy ![alt text](https://api.travis-ci.org/ChrisPhillips-cminion/APIConnect-Policy-AssemblyLogger.svg?branch=master "status")
 
 When you design and develop custom integration policies, you need to be alerted to any problems with your policies. By defining a custom logging policy to log the values of context variables, you can be quickly alerted to where policies might be malfunctioning so that you can correct any errors.
 
